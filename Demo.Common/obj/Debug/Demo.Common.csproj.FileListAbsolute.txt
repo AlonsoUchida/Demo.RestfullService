@@ -1,5 +1,0 @@
-F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.Common\bin\Debug\Demo.Common.dll
-F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.Common\bin\Debug\Demo.Common.pdb
-F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.Common\obj\Debug\Demo.Common.csprojResolveAssemblyReference.cache
-F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.Common\obj\Debug\Demo.Common.dll
-F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.Common\obj\Debug\Demo.Common.pdb
