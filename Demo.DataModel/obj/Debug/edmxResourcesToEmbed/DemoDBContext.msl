@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DemoDBModelStoreContainer" CdmEntityContainer="DemoDBEntities">
+    <EntitySetMapping Name="TB_CURSO">
+      <EntityTypeMapping TypeName="DemoDBModel.TB_CURSO">
+        <MappingFragment StoreEntitySet="TB_CURSO">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="horasCredito" ColumnName="horasCredito" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ESTUDIANTE">
+      <EntityTypeMapping TypeName="DemoDBModel.TB_ESTUDIANTE">
+        <MappingFragment StoreEntitySet="TB_ESTUDIANTE">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ESTUDIANTEXCURSO">
+      <EntityTypeMapping TypeName="DemoDBModel.TB_ESTUDIANTEXCURSO">
+        <MappingFragment StoreEntitySet="TB_ESTUDIANTEXCURSO">
+          <ScalarProperty Name="estudiante_id" ColumnName="estudiante_id" />
+          <ScalarProperty Name="curso_id" ColumnName="curso_id" />
+          <ScalarProperty Name="semestre" ColumnName="semestre" />
+          <ScalarProperty Name="añoAcademico" ColumnName="añoAcademico" />
+          <ScalarProperty Name="grado" ColumnName="grado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

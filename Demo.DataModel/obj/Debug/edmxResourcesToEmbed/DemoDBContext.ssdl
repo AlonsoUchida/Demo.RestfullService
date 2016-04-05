@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DemoDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TB_CURSO">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+    <Property Name="horasCredito" Type="int" />
+  </EntityType>
+  <EntityType Name="TB_ESTUDIANTE">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+    <Property Name="fechaNacimiento" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DemoDB.dbo.TB_ESTUDIANTEXCURSO' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TB_ESTUDIANTEXCURSO">
+    <Key>
+      <PropertyRef Name="estudiante_id" />
+      <PropertyRef Name="curso_id" />
+    </Key>
+    <Property Name="estudiante_id" Type="int" Nullable="false" />
+    <Property Name="curso_id" Type="int" Nullable="false" />
+    <Property Name="semestre" Type="varchar" MaxLength="10" />
+    <Property Name="añoAcademico" Type="int" />
+    <Property Name="grado" Type="int" />
+  </EntityType>
+  <Association Name="FK__TB_ESTUDI__curso__30F848ED">
+    <End Role="TB_CURSO" Type="Self.TB_CURSO" Multiplicity="1" />
+    <End Role="TB_ESTUDIANTEXCURSO" Type="Self.TB_ESTUDIANTEXCURSO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CURSO">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="TB_ESTUDIANTEXCURSO">
+        <PropertyRef Name="curso_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_ESTUDI__estud__300424B4">
+    <End Role="TB_ESTUDIANTE" Type="Self.TB_ESTUDIANTE" Multiplicity="1" />
+    <End Role="TB_ESTUDIANTEXCURSO" Type="Self.TB_ESTUDIANTEXCURSO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ESTUDIANTE">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="TB_ESTUDIANTEXCURSO">
+        <PropertyRef Name="estudiante_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DemoDBModelStoreContainer">
+    <EntitySet Name="TB_CURSO" EntityType="Self.TB_CURSO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_ESTUDIANTE" EntityType="Self.TB_ESTUDIANTE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_ESTUDIANTEXCURSO" EntityType="Self.TB_ESTUDIANTEXCURSO" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TB_ESTUDIANTEXCURSO].[estudiante_id] AS [estudiante_id], 
+    [TB_ESTUDIANTEXCURSO].[curso_id] AS [curso_id], 
+    [TB_ESTUDIANTEXCURSO].[semestre] AS [semestre], 
+    [TB_ESTUDIANTEXCURSO].[añoAcademico] AS [añoAcademico], 
+    [TB_ESTUDIANTEXCURSO].[grado] AS [grado]
+    FROM [dbo].[TB_ESTUDIANTEXCURSO] AS [TB_ESTUDIANTEXCURSO]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__TB_ESTUDI__curso__30F848ED" Association="Self.FK__TB_ESTUDI__curso__30F848ED">
+      <End Role="TB_CURSO" EntitySet="TB_CURSO" />
+      <End Role="TB_ESTUDIANTEXCURSO" EntitySet="TB_ESTUDIANTEXCURSO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_ESTUDI__estud__300424B4" Association="Self.FK__TB_ESTUDI__estud__300424B4">
+      <End Role="TB_ESTUDIANTE" EntitySet="TB_ESTUDIANTE" />
+      <End Role="TB_ESTUDIANTEXCURSO" EntitySet="TB_ESTUDIANTEXCURSO" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

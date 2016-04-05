@@ -1,0 +1,17 @@
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.DataModel\bin\Debug\Demo.DataModel.dll.config
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.DataModel\bin\Debug\Demo.DataModel.dll
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.DataModel\bin\Debug\Demo.DataModel.pdb
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.DataModel\bin\Debug\EntityFramework.dll
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.DataModel\bin\Debug\EntityFramework.SqlServer.dll
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.DataModel\bin\Debug\UnityResolver.dll
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.DataModel\bin\Debug\Microsoft.Practices.Unity.dll
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.DataModel\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.DataModel\bin\Debug\UnityResolver.pdb
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.DataModel\bin\Debug\EntityFramework.xml
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.DataModel\bin\Debug\EntityFramework.SqlServer.xml
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.DataModel\bin\Debug\Microsoft.Practices.Unity.xml
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.DataModel\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.DataModel\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.DataModel\obj\Debug\Demo.DataModel.csprojResolveAssemblyReference.cache
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.DataModel\obj\Debug\Demo.DataModel.dll
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.DataModel\obj\Debug\Demo.DataModel.pdb

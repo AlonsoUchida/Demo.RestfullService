@@ -1,0 +1,5 @@
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.BusinessEntities\bin\Debug\Demo.BusinessEntities.dll
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.BusinessEntities\bin\Debug\Demo.BusinessEntities.pdb
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.BusinessEntities\obj\Debug\Demo.BusinessEntities.csprojResolveAssemblyReference.cache
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.BusinessEntities\obj\Debug\Demo.BusinessEntities.dll
+F:\Proyectos\AlonsoUchida\Demo.RestfullService\Demo.BusinessEntities\obj\Debug\Demo.BusinessEntities.pdb
